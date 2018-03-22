@@ -18,4 +18,9 @@ public class DemoApplication {
 	    return "The most complicated hello world I've ever done";
     }
 
+    @RequestMapping("/dingus")
+	public String sayDingus() {
+		return "Let's test a dingus";
+	}
+
 }
