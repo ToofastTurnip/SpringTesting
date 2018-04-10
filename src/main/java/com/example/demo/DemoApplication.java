@@ -23,4 +23,9 @@ public class DemoApplication {
 		return "Let's test a dingus";
 	}
 
+	@RequestMapping("/lawrence")
+	public String sayLawrence() {
+		return "Mayo";
+	}
+
 }
