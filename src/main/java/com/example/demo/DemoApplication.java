@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+	SpringApplication.run(DemoApplication.class, args);
+    }
 
-	@RequestMapping("/hello")
+    @RequestMapping("/hello")
     public String sayHello() {
-	    return "The most complicated hello world I've ever done";
+	return "The most complicated hello world I've ever done";
     }
 
     @RequestMapping("/dingus")
-	public String sayDingus() {
-		return "Let's test a dingus";
-	}
+    public String sayDingus() {
+	return "Let's test a dingus";
+    }
 
-	@RequestMapping("/lawrence")
-	public String sayLawrence() {
-		return "Mayo";
-	}
+    @RequestMapping("/lawrence")
+    public String sayLawrence() {
+	return "Mayo";
+    }
 
 }
